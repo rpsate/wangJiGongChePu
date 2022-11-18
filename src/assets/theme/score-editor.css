@@ -1,0 +1,44 @@
+/*
+Name:   score-editor
+Author: by Bram de Haan, adapted from DuoTone themes by Simurai (http://simurai.com/projects/2016/01/01/duotone-themes)
+
+CodeMirror template by Jan T. Sott (https://github.com/idleberg), adapted by Bram de Haan (https://github.com/atelierbram/)
+*/
+
+.cm-s-score-editor.CodeMirror { background: #ffffff; color: #b29762;line-height: 1.5;border-top: 1px solid #d3d3d3;}
+.cm-s-score-editor div.CodeMirror-selected { background: #e3dcce !important; border-top: 1px solid #d3d3d3;}
+.cm-s-score-editor .CodeMirror-gutters { background: #faf8f5; border-left: none; box-shadow:#ff6600 -10px 0px 20px;}
+.cm-s-score-editor .CodeMirror-linenumber { color: #cdc4b1; }
+
+/* begin cursor */
+.cm-s-score-editor .CodeMirror-cursor { border-left: 2px solid #ff6600; /* border-left: 1px solid #93abdc80; *//* border-right: 1px solid #ff6600; *//* border-right: .5em solid #93abdc80; */ opacity: .8; }
+.cm-s-score-editor .CodeMirror-activeline-background { background: rgba(255, 0, 0, 0.59);  /* background: #e3dcce80; */ opacity: .5; }
+.cm-s-score-editor .cm-fat-cursor .CodeMirror-cursor { background: #93abdc; /* #93abdc80; */ opacity: .5; }
+/* end cursor */
+
+.cm-s-score-editor span.cm-atom, .cm-s-score-editor span.cm-number, .cm-s-score-editor span.cm-keyword, .cm-s-score-editor span.cm-variable, .cm-s-score-editor span.cm-attribute, .cm-s-score-editor span.cm-quote, .cm-s-score-editor-light span.cm-hr, .cm-s-score-editor-light span.cm-link { color: #063289; }
+
+.cm-s-score-editor span.cm-property { color: #b29762; }
+.cm-s-score-editor span.cm-punctuation, .cm-s-score-editor span.cm-unit, .cm-s-score-editor span.cm-negative { color: #063289; }
+.cm-s-score-editor span.cm-string, .cm-s-score-editor span.cm-operator { /*color: #1659df;*/color: red !important; }
+.cm-s-score-editor span.cm-positive { color: #896724; }
+
+.cm-s-score-editor span.cm-variable-2, .cm-s-score-editor span.cm-variable-3, .cm-s-score-editor span.cm-type, .cm-s-score-editor span.cm-string-2, .cm-s-score-editor span.cm-url { color: #896724; }
+.cm-s-score-editor span.cm-def, .cm-s-score-editor span.cm-tag, .cm-s-score-editor span.cm-builtin, .cm-s-score-editor span.cm-qualifier, .cm-s-score-editor span.cm-header, .cm-s-score-editor span.cm-em { color: #2d2006; }
+.cm-s-score-editor span.cm-bracket, .cm-s-score-editor span.cm-comment { color: #b6ad9a; }
+
+/* using #f00 red for errors, don't think any of the colorscheme variables will stand out enough, ... maybe by giving it a background-color ... */
+/* .cm-s-score-editor span.cm-error { background: #896724; color: #728fcb; } */
+.cm-s-score-editor span.cm-error, .cm-s-score-editor span.cm-invalidchar { color: #f00;}
+
+.cm-s-score-editor span.cm-header { font-weight: normal; }
+.cm-s-score-editor .CodeMirror-matchingbracket { text-decoration: underline; color: #faf8f5 !important; }
+
+.cm-pu { color: #333333;font-family: gongchepu !important; font-size: 22px}
+.cm-spu { color: #a94442;font-family: gongchepu !important; font-size: 18px}
+.cm-none { display: none}
+.cm-by { color: #ff6700;  font-family: gongchepu !important; font-size: 22px;font-weight: bolder}
+.cm-qiang {color: #64c564; font-size: 22px; font-weight: bolder}
+.cm-space {position: relative;}
+.cm-space:after {content:''; position:absolute; top:-5px; width: 2px; height: 22px; left: 50%; border-left: 2px solid #a94442;}
+.cm-error { color: red; font-size: 30px}

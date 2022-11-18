@@ -1,0 +1,42 @@
+/*
+Name:   lyric-editor
+Author: by Bram de Haan, adapted from DuoTone themes by Simurai (http://simurai.com/projects/2016/01/01/duotone-themes)
+
+CodeMirror template by Jan T. Sott (https://github.com/idleberg), adapted by Bram de Haan (https://github.com/atelierbram/)
+*/
+
+.cm-s-lyric-editor.CodeMirror { background: #ffffff; color: #b29762;line-height: 1.5; font-weight: bold;}
+.cm-s-lyric-editor div.CodeMirror-selected { background: #e3dcce !important; }
+.cm-s-lyric-editor .CodeMirror-gutters { background: #faf8f5; border-left: none; box-shadow:#ff6600 -10px 0px 20px}
+.cm-s-lyric-editor .CodeMirror-linenumber { color: #cdc4b1; }
+
+/* begin cursor */
+.cm-s-lyric-editor .CodeMirror-cursor { border-left: 2px solid #ff6600; /* border-left: 1px solid #93abdc80; */ /*border-right: .5em solid #ff6600;*/ /* border-right: .5em solid #93abdc80; */ opacity: .8; }
+.cm-s-lyric-editor .CodeMirror-activeline-background { background: #e3dcce;  /* background: #e3dcce80; */ opacity: .5; }
+.cm-s-lyric-editor .cm-fat-cursor .CodeMirror-cursor { background: #93abdc; /* #93abdc80; */ opacity: .5; }
+/* end cursor */
+
+.cm-s-lyric-editor span.cm-atom, .cm-s-lyric-editor span.cm-number, .cm-s-lyric-editor span.cm-keyword, .cm-s-lyric-editor span.cm-variable, .cm-s-lyric-editor span.cm-attribute, .cm-s-lyric-editor span.cm-quote, .cm-s-lyric-editor-light span.cm-hr, .cm-s-lyric-editor-light span.cm-link { color: #063289; }
+
+.cm-s-lyric-editor span.cm-property { color: #b29762; }
+.cm-s-lyric-editor span.cm-punctuation, .cm-s-lyric-editor span.cm-unit, .cm-s-lyric-editor span.cm-negative { color: #063289; }
+.cm-s-lyric-editor span.cm-string, .cm-s-lyric-editor span.cm-operator { /*color: #1659df;*/color: red !important; }
+.cm-s-lyric-editor span.cm-positive { color: #896724; }
+
+.cm-s-lyric-editor span.cm-variable-2, .cm-s-lyric-editor span.cm-variable-3, .cm-s-lyric-editor span.cm-type, .cm-s-lyric-editor span.cm-string-2, .cm-s-lyric-editor span.cm-url { color: #896724; }
+.cm-s-lyric-editor span.cm-def, .cm-s-lyric-editor span.cm-tag, .cm-s-lyric-editor span.cm-builtin, .cm-s-lyric-editor span.cm-qualifier, .cm-s-lyric-editor span.cm-header, .cm-s-lyric-editor span.cm-em { color: #2d2006; }
+.cm-s-lyric-editor span.cm-bracket, .cm-s-lyric-editor span.cm-comment { color: #b6ad9a; }
+
+/* using #f00 red for errors, don't think any of the colorscheme variables will stand out enough, ... maybe by giving it a background-color ... */
+/* .cm-s-lyric-editor span.cm-error { background: #896724; color: #728fcb; } */
+.cm-s-lyric-editor span.cm-error, .cm-s-lyric-editor span.cm-invalidchar { color: #f00;}
+
+.cm-s-lyric-editor span.cm-header { font-weight: normal; font-family: monospace, kangxi }
+.cm-s-lyric-editor .CodeMirror-matchingbracket { text-decoration: underline; color: #faf8f5 !important; font-family: monospace, kangxi }
+.cm-title { font-size: 24px; color: #333333; letter-spacing: 6px; padding-left: 6px; font-family: monospace, kangxi}
+.cm-nian { font-style: oblique; color: #666666; font-family: monospace, kangxi}
+.cm-jia { font-style: oblique; color: #666666; font-family: monospace, kangxi}
+.cm-pai { font-size: 20px; color: #333333; font-family: monospace, kangxi}
+.cm-diao { font-style: oblique; font-size: 18px; color: #666666; font-family: monospace, kangxi}
+.cm-biao { color: #a94442; font-family: monospace, kangxi}
+.cm-ci {  color:#333; font-family: monospace, kangxi}
