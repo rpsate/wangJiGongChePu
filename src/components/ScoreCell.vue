@@ -2,9 +2,14 @@
 <span class="cell" :class="lyric.type" v-if="lyric">
   <span class="pu" v-if="score">
     <span :class="item.type=='spu'?'spu-cell':'pu-cell'" v-for="item in score">
-      <span>{{item.text}}</span>
+      <span class="pu-qiang">
+        <span>{{item.text}}</span>
+        <span v-if="item.qiang" class="qiang">
+          <span v-for="qiang in item.qiang">{{qiang.text}}<br></span>
+        </span>
+      </span>
       <span v-if="item.by" class="by">
-        <span v-for="by in item.by">{{by}}<br></span>
+        <span v-for="by in item.by" :style="[ '1', '3', '4', '6', '8'].includes(by)?'color:red':''">{{by}}<br></span>
       </span>
       <br>
     </span>
@@ -88,13 +93,22 @@ export default {
   .spu-cell {
     display: flex;
     font-size: .75em !important;
-    padding-left: 6px;
+    padding-left: 4px;
+  }
+  .pu-qiang {
+    display: flex;
+    flex-direction: column;
+  }
+  .qiang {
+    line-height: 9px;
+    margin-top: -4px;
+    margin-left: -2px;
+    padding: 0;
   }
   .by {
     padding-top: 2px;
     padding-bottom: 4px;
-    line-height: 12px;
-    color: red;
+    line-height: 6px;
   }
 }
 

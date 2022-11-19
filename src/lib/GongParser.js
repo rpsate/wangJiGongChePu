@@ -49,10 +49,16 @@ class GongParser {
                     break
                 case 'spu':
                 case 'pu':
-                    tokenItem.push({type: item.type, text: item.string, by: []})
+                    tokenItem.push({type: item.type, text: item.string, by: [], qiang: []})
                     break
                 case 'qiang':
-                    tokenItem.push({type: item.type, text: this.hashKey[item.string]})
+                    // tokenItem.push({type: item.type, text: this.hashKey[item.string]})
+                    for (let tail=tokenItem.length-1; tail >= 0; tail--) {
+                        if (tokenItem[tail].type == 'pu') {
+                            tokenItem[tail].qiang.push({type: item.type, text: this.hashKey[item.string]})
+                            break
+                        }
+                    }
                     break
                 case 'by':
                     for (let tail=tokenItem.length-1; tail >= 0; tail--) {

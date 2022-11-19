@@ -219,6 +219,7 @@ export default {
         for(let line = start; line < start + len; line++) {
           let tokens = cmInstance.getLineTokens(line, true)
           tokenList.push(gongParser.scoreParse(tokens))
+          console.log(tokenList)
         }
         // // 自动滚动
         // const lineCount = lyricEditor.value.lineCount()
